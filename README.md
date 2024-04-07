@@ -13,7 +13,7 @@ python3 model.py <input_image_path> <output_image_path>
 ```
 - To run the conversion script 
 ```
-python3 conversion.py
+python3 conversion.py <input_image_path>
 ```
 - To run swift code that takes input and output image path
 ```

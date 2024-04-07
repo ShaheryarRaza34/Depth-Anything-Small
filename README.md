@@ -5,7 +5,7 @@ Prediction service of Depth Anything Model from Hugging Face
 ```
 git clone <repo url>
 cd Depth-Anything-Small
-cd model
+cd scripts
 ```
 - To run the model with input image
 ```

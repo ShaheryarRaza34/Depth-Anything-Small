@@ -6,8 +6,8 @@ import sys
 
 
 image_path = sys.argv[1]
-image = Image.open(image_path)
-
+print(image_path)
+image = Image.open(image_path).convert("RGB")
 image_processor = AutoImageProcessor.from_pretrained("LiheYoung/depth-anything-small-hf")
 model = AutoModelForDepthEstimation.from_pretrained("LiheYoung/depth-anything-small-hf")
 
@@ -30,4 +30,9 @@ prediction = torch.nn.functional.interpolate(
 output = prediction.squeeze().cpu().numpy()
 formatted = (output * 255 / np.max(output)).astype("uint8")
 depth = Image.fromarray(formatted)
-depth.save('depth.png')
+depth.save(sys.argv[2]+'.png')
+
+
+
+
+

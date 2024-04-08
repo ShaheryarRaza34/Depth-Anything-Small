@@ -1,6 +1,11 @@
 # Depth-Anything-Small
 Prediction service of Depth Anything Model from Hugging Face
 
+#Install packages
+```
+pip install transformers coremltools torch torchvision Pillow
+```
+
 #Steps to Run
 ```
 git clone <repo url>
